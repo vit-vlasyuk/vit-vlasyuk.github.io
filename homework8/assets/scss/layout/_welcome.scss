@@ -1,0 +1,85 @@
+.welcome {
+  height: 88vh;
+  color: $color-white;
+  background: #ccc url("../img/welcome.png") no-repeat bottom/cover;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  .slogan-header {
+    margin-top: 0;
+    margin-bottom: 4vh;
+    padding: 0 5vw 2vh;
+    border-bottom: 2px solid $color-blue;
+    text-transform: uppercase;
+    color: $color-white;
+
+    @media (max-width: 1200px) {
+      font-size: 100px;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 90px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 80px;
+    }
+
+    @media (max-width: 560px) {
+      font-size: 60px;
+    }
+  }
+
+  .slogan {
+    margin-top: 0;
+    margin-bottom: 6vh;
+
+    @media (max-width: 767px) {
+      padding: 0 5vh;
+    }
+  }
+
+  .header-btn {
+    padding: 22px;
+    color: $color-white;
+    border: 1px solid $color-blue;
+    transition: all 0.5s ease-in-out;
+
+    @media (max-height: 500px) {
+      padding: 11px;
+      font-size: 0.75em;
+    }
+
+    &:hover {
+      background: $color-blue;
+      opacity: .8;
+    }
+  }
+
+  .arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 10vh;
+    transform: translate(-50%,0);
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    color: $color-white;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+
+    @media (max-height: 500px) {
+      width: 45px;
+      bottom: 0;
+      font-size: 0.75em;
+    }
+
+    &:hover {
+      background: $color-blue;
+      opacity: .8;
+    }
+  }
+}
