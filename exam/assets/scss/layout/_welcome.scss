@@ -1,0 +1,39 @@
+.welcome {
+  background: #898686;
+  .menu {
+    text-align: center;
+    font-size: 0;
+    li {
+      position: relative;
+      display: inline-block;
+      background: #898686;
+      border: 1px solid #fff;
+      border-bottom: none;
+      border-top: none;
+      &:before {
+        content: '';
+        position: absolute;
+        opacity: 0;
+        left: 50%;
+        bottom: -18px;
+        transform: translate(-50%,0);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 18px 15px 0 15px;
+        border-color: #898686 transparent transparent transparent;
+      }
+      &:hover {
+        li:before {
+          opacity: 1;
+        }
+      }
+      a {
+        color: #fff;
+        font-size: 20px;
+        display: block;
+        padding: 20px;
+      }
+    }
+  }
+}

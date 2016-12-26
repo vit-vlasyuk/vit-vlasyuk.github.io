@@ -39,7 +39,7 @@ $(document).ready(function() {
     });
 
     //masonry
-    $('.grid').masonry({
+    jQuery('.grid').masonry({
         // options
         itemSelector: '.grid-item',
         columnWidth: 1

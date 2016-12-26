@@ -1,0 +1,115 @@
+.health {
+  .bg {
+    background: #fff;
+  }
+  .flex {
+    display: flex;
+    .red {
+      background: #f32b34;
+    }
+    .wrap {
+      background: #61a70a;
+      color: #fff;
+      padding: 10px 15px;
+      h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  .wrap-text {
+    padding: 20px;
+    span {
+      color: #61a70a;
+      text-transform: uppercase;
+      font-size: 30px;
+      text-align: right;
+    }
+  }
+  .main-list {
+    margin-top: 50px;
+    .news-column {
+      text-align: center;
+      .news {
+        background: #0070a1;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 0;
+      }
+      p {
+        color: #0070a1;
+        text-align: left;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+      a {
+        color: #0070a1;
+        background: #e6e5e5;
+        padding: 10px 100px;
+      }
+    }
+    .announce-column {
+      text-align: center;
+      .announce {
+        background: #f32b34;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 0;
+      }
+      p {
+        text-align: left;
+        padding: 20px;
+        a {
+          color: #61a70a;
+          text-decoration: underline;
+        }
+      }
+      .grey {
+        background: #e6e5e5;
+      }
+    }
+    .calendar-column {
+      text-align: center;
+      .calendar {
+        background: #fdcd05;
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 0;
+      }
+      .calendar-list {
+        li {
+          text-align: left;
+          .calendar-wrap {
+            display: block;
+            margin-bottom: 20px;
+          }
+          dt, dd {
+            display: inline-block;
+          }
+          dt {
+            color: #fdcd05;
+          }
+          h4 {
+            color: #fdcd05;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+  .footer-health {
+    text-align: center;
+    background: #61a70a;
+    padding: 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
