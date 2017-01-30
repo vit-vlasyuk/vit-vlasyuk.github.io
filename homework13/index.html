@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>HW13</title>
+  <style>
+  .flex {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  input {
+    font-size: 60px;
+    text-align: center;
+  }
+  </style>
+</head>
+
+<body onload="onload();">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#input-value").keydown(function (e) {
+          // backspace, delete, tab, escape, enter and .
+          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                    // Ctrl/cmd+A
+                  (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+                    // Ctrl/cmd+C
+                  (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+                    // Ctrl/cmd+X
+                  (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+                    // home, end, left, right
+                  (e.keyCode >= 35 && e.keyCode <= 39)) {
+            return;
+          }
+          // 0-9
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+          }
+        });
+      });
+
+      var randomNumber = Math.floor(Math.random() * (999 + 1));
+      var inputValue;
+      var counter = 10;
+
+  function onload(){
+
+    inputValue = document.getElementById('input-value');
+    $('#submit').click(function() {
+      counter--;
+
+      if (counter >= 0) {
+
+      if (inputValue.value > randomNumber) {
+          alert('більше ніж задумане' + '  залишилось спроб ' + counter + '  ' + randomNumber);
+      } else if (inputValue.value < randomNumber) {
+              alert('менше ніж задумане' + '  залишилось спроб ' + counter + '  ' + randomNumber);
+      } else {
+          alert('ПЕРЕМОГА!  ' + 'задумане число '+ randomNumber);
+      }
+      } else {
+          alert ('GAME OVER  ' + 'задумане число '+ randomNumber);
+      }
+
+    });
+  }
+  </script>
+  <div class="flex">
+    <input type="text" id="input-value" name="name" value="" maxlength="3" max="999" min="0" style="margin-bottom: 20px" autocomplete="off">
+    <input type="submit" value="ГРА!" id="submit" name="submit">
+  </div>
+  </body>
+</html>

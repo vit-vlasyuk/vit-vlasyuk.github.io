@@ -3,6 +3,7 @@
 @import 'vendors/bootstrap-grid';
 @import 'vendors/flexslider';
 @import 'vendors/font-awesome';
+@import 'vendors/fontello';
 
 // variables, fonts, mixins, helpers... common styles used across the entire site
 @import 'base/fonts';
@@ -19,3 +20,4 @@
 @import 'layout/clients';
 @import 'layout/projects';
 @import 'layout/steps';
+@import 'layout/blog-page';

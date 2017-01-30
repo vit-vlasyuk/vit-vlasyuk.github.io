@@ -17,11 +17,14 @@
   background-color: white;
   border: none;
   border-radius: 25px;
+  @media (max-width: 768px) {
+    width: 120px;
+  }
 }
 .email {
   height: 50px;
   padding-right: 45px;
-  padding-left: 10px;
+  padding-left: 20px;
   font-family: $font-family-sans;
   font-weight: bold;
   color: white;

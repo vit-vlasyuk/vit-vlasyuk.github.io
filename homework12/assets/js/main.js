@@ -4,7 +4,8 @@ $(document).ready(function() {
 
     $('.flexslider').flexslider({
         controlNav: false,
-        animation: "slide",
+        animationLoop: true,
+        animation: "fade"
     });
 
     $('.menu-toggle').click(function() {

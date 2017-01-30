@@ -14,12 +14,16 @@
     background-repeat: no-repeat;
     border: 1px solid $color-grey-bg;
     width: 70%;
-    @media (max-width: 922px) {
+    @media (max-width: 991px) {
       margin: 20px auto;
+      width: 90%;
     }
 
   p {
       text-transform: none;
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
     }
 
     @media (min-width: 992px) {

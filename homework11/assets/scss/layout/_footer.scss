@@ -6,6 +6,10 @@
 
   .green-button {
     margin-left: -120px;
+    @media (max-width: 767px) {
+      margin-left: -100px;
+      padding: 8px 10px;
+    }
   }
 }
 
@@ -47,8 +51,8 @@
   background-color: #323334;
   border: none;
   border-radius: 25px;
-  @media (max-width: 768px) {
-    width: 340px;
+  @media (max-width: 767px) {
+    width: 256px;
   }
 }
 
